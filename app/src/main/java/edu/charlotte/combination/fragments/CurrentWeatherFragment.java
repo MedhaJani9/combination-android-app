@@ -100,6 +100,8 @@ public class CurrentWeatherFragment extends Fragment {
                 .addQueryParameter("lon", String.valueOf(mCity.getLongitude()))
                 .build();
 
+        //make a secret key for api in .env file
+
 //        Request request = new Request.Builder()
 //                .url("https://www.theappsdr.com/clt.json")
 //                .build();
