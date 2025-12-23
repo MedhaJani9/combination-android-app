@@ -12,12 +12,11 @@
 /captures
 .externalNativeBuild
 .cxx
-local.properties
 
 
 .gradle/
 local.properties
 /build/
 .idea/
-*.iml
+
 
