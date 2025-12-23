@@ -4,7 +4,6 @@ The app supports user authentication, CRUD operations, image uploads, API-based 
 Designed to demonstrate mobile app architecture, backend integration, and API consumption in a scalable, exam-ready project.
 
 
-
 Quick implementation notes:
 
 All networking uses OkHttp. I used enqueue() (async) for production-like behavior. The commented sync example is for exam reference (you must run sync calls off the UI thread).
@@ -20,3 +19,11 @@ Use OPENWEATHER_API_KEY (place it in both WeatherFragment and ForecastFragment i
 All AlertDialogs are inline and used for validation & network/parse errors.
 
 ViewBinding is used for convenience — ensure it is enabled in your build.gradle (module).
+
+
+
+Demo here: 
+Combinations_App
+https://medhajani9.github.io/Portfolio/projects.html
+
+
