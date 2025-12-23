@@ -1,7 +1,13 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     id ("com.google.gms.google-services")
 }
+
+val localProperties = Properties()
+localProperties.load(FileInputStream(rootProject.file("local.properties")))
 
 android {
     namespace = "edu.charlotte.combination"
@@ -15,6 +21,13 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField(
+            "String",
+            "WEATHER_API_KEY",
+            "\"${localProperties.getProperty("WEATHER_API_KEY")}\""
+        )
+
     }
 
     buildTypes {
@@ -30,7 +43,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    buildFeatures { viewBinding = true }
+    buildFeatures { viewBinding = true
+    buildConfig = true
+    }
 }
 
 dependencies {

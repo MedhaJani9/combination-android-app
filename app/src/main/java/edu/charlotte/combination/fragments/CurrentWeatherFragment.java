@@ -19,6 +19,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+//import edu.charlotte.combination.BuildConfig;
 
 import edu.charlotte.combination.databinding.FragmentCurrentWeatherBinding;
 import edu.charlotte.combination.models.DataService;
@@ -94,7 +95,7 @@ public class CurrentWeatherFragment extends Fragment {
     void getWeather() {
 
         HttpUrl url = HttpUrl.parse("https://api.openweathermap.org/data/2.5/weather").newBuilder()
-                .addQueryParameter("appid", "5ff944a2d7064f5d4369313d4eb44cdd")
+                .addQueryParameter("appid", "actual.API.key")
                 .addQueryParameter("units", "imperial")
                 .addQueryParameter("lat", String.valueOf(mCity.getLatitude()))
                 .addQueryParameter("lon", String.valueOf(mCity.getLongitude()))
