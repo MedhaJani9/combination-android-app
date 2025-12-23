@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_options_root"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasks App"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonForums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forums App"/>
+
+</LinearLayout>

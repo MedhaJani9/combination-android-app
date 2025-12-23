@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "829680581338",
+    "project_id": "combination-70cbc",
+    "storage_bucket": "combination-70cbc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829680581338:android:aa77478fbd137ae92a03e3",
+        "android_client_info": {
+          "package_name": "edu.charlotte.combination"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2K_23dywLGpZ8_bN7a1a78odDF_aDSW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
